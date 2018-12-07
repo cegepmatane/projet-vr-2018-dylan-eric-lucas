@@ -27,11 +27,7 @@ public class SpawnPoint : MonoBehaviour {
 
     void SpawnNextEnemy()
     {
-        //GameObject newEnemy = Instantiate(new Enemy().gameObject);
-        //newEnemy.transform.position = new Vector3(0, -1 + transform.localScale.y / 2, 0);
-
-        //GameObject newEnemy = GameObject.CreatePrimitive();
-        // Besoin de regarder de la doc sur les prefab
-
+        GameObject newEnemy = Instantiate(Resources.Load("EnemyPrefab")) as GameObject;
+        newEnemy.transform.position = new Vector3(0, -1 + transform.localScale.y / 2, 0);
     }
 }
