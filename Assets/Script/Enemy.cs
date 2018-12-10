@@ -27,6 +27,4 @@ public class Enemy : MonoBehaviour {
                 // Debug.Log("close to the player");
             }
         }
-		
 	}
-}
