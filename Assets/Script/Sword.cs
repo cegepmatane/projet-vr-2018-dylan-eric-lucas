@@ -23,8 +23,8 @@ public class Sword : MonoBehaviour {
             //If the GameObject has the same tag as specified, output this message in the console
             Enemy script;
             script = collision.gameObject.GetComponent<Enemy>();
-            script.enabled = false;
-
+            script.Die();
+            
         }
     }
 }
