@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &401159052
+--- !u!1001 &667738250
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -122,35 +122,39 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4148995434462248, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.509
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4148995434462248, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.78
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4148995434462248, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 29.108658
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4148995434462248, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.07986964
       objectReference: {fileID: 0}
     - target: {fileID: 4148995434462248, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4148995434462248, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4148995434462248, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99680537
       objectReference: {fileID: 0}
     - target: {fileID: 4148995434462248, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606058509662362, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
+      propertyPath: m_Name
+      value: SwordPivot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 482a8e9000b422146a9b261759b3d9b2, type: 2}
@@ -296,5 +300,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
