@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnPoint : MonoBehaviour {
 
@@ -8,11 +9,17 @@ public class SpawnPoint : MonoBehaviour {
     int Score;
     public float SpawnDelay = 2;
 
+    GameObject UIScore;
+    Text UITextComponent;
+
 	// Use this for initialization
 	void Start ()
     {
         this.Player = GameObject.FindGameObjectWithTag("Player");
         this.Score = 0;
+
+        this.UIScore = GameObject.Find("UIScore");
+        this.UITextComponent = UIScore.GetComponent<Text>();
 
         StartCoroutine(SpawnRoutine());
         StartCoroutine(ScoreUp());
@@ -21,7 +28,7 @@ public class SpawnPoint : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-
+        this.UITextComponent.text = "Score : " + this.Score;
 	}
 
     IEnumerator SpawnRoutine()
