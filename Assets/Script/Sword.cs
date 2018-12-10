@@ -21,7 +21,10 @@ public class Sword : MonoBehaviour {
         if (collision.gameObject.tag == "Zombie")
         {
             //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Workking");
+
+            script = collision.GetComponent<Enemy>();
+            script.enable = false;
+
         }
     }
 }
