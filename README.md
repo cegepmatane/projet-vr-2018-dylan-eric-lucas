@@ -1,2 +1,2 @@
-# projet-vr-2018-lucasPARISOT
-projet-vr-2018-lucasPARISOT created by GitHub Classroom
+# projet-vr-2018-dylan-eric-lucas
+Projet VR 2018 - Dylan Éric Lucas
