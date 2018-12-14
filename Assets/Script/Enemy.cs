@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour {
     public GameObject Player;
     int MoveSpeed = 4;
     int MaxDist = 10;
-    int MinDist = 5;
+    int MinDist = 1;
 
 	// Use this for initialization
 	void Start () {

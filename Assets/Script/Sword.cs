@@ -20,11 +20,15 @@ public class Sword : MonoBehaviour {
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "Zombie")
         {
+            // Add score
+            Score score = Score.getInstance();
+            score.addScore(5);
             //If the GameObject has the same tag as specified, output this message in the console
             Enemy script;
             script = collision.gameObject.GetComponent<Enemy>();
             script.Die();
-            Destroy(script, 5);
+            script.enabled = false;
+            Destroy(script.gameObject, 3);
         }
     }
 }

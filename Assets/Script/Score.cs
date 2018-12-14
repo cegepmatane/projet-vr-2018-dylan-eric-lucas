@@ -31,6 +31,11 @@ public class Score : MonoBehaviour {
 
 	}
 
+    public void addScore(int score)
+    {
+        this.ScorePoints += score;
+    }
+
     IEnumerator ScoreUp()
     {
         while (true)
