@@ -24,7 +24,7 @@ public class Sword : MonoBehaviour {
             Enemy script;
             script = collision.gameObject.GetComponent<Enemy>();
             script.Die();
-            
+            Destroy(script, 5);
         }
     }
 }
