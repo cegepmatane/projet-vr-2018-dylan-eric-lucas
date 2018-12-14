@@ -33,7 +33,7 @@ public class SpawnPoint : MonoBehaviour {
 
     void SpawnNextEnemy()
     {
-        GameObject newEnemy = Instantiate(Resources.Load("EnemyPrefab")) as GameObject;
+        GameObject newEnemy = Instantiate(Resources.Load("ZombiePrefab")) as GameObject;
 
         Vector3 newEnnemyPosition = getRandomPosition();
         while (Vector3.Distance(Player.transform.position, newEnnemyPosition) < 20.0f)
