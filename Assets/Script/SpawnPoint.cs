@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnPoint : MonoBehaviour {
 
     public GameObject Player;
-    public float SpawnDelay = 2;
+    public float SpawnDelay = 2.5f;
 
 
 	// Use this for initialization
@@ -36,7 +36,7 @@ public class SpawnPoint : MonoBehaviour {
         GameObject newEnemy = Instantiate(Resources.Load("ZombiePrefab")) as GameObject;
 
         Vector3 newEnnemyPosition = getRandomPosition();
-        while (Vector3.Distance(Player.transform.position, newEnnemyPosition) < 20.0f)
+        while (Vector3.Distance(Player.transform.position, newEnnemyPosition) < 15.0f)
         {
             newEnnemyPosition = getRandomPosition();
         }
